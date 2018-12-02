@@ -10,11 +10,19 @@ using Swashbuckle.AspNetCore.Swagger;
 
 namespace HomeControl
 {
+    /// <summary>
+    /// Application Startup Class
+    /// </summary>
     public class Startup
     {
 
         private readonly ILogger logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Startup"/> class.
+        /// </summary>
+        /// <param name="configuration">IConfiguration Dependency Injection</param>
+        /// <param name="logger">ILogger Dependency Injection</param>
         public Startup(IConfiguration configuration, ILogger<Startup> logger)
         {
             this.logger = logger;
@@ -77,6 +85,9 @@ namespace HomeControl
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "API Default",
+                    template: "api/{controller}/{id?}");
             });
         }
     }

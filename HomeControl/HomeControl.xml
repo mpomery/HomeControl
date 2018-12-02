@@ -4,5 +4,11 @@
         <name>HomeControl</name>
     </assembly>
     <members>
+        <member name="M:HomeControl.Controllers.ApiController.Index">
+            <summary>
+            Get all the rooms, lights and switches along with their current state.
+            </summary>
+            <returns>An Objest</returns>
+        </member>
     </members>
 </doc>
