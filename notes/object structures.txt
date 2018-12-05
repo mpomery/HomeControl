@@ -1,0 +1,48 @@
+Device:
+	Device Id (Combination of manufacturer and manufacturer id)
+	Manufacturer
+	Manufacturer Id
+	Status (Online or Offline)
+	State (On or Off, Unknown)
+	Last Updated
+	Properties:
+		Lights:
+			Colour Temp Range
+			Brightness Range
+			Colour Changing
+	Settings:
+		Lights:
+			Brightness
+			Colour Temp
+			RGB ColorR
+			RGB ColorG
+			RGB ColorB
+		Powerpoints:
+			?
+
+Sensor:
+	Sensor Name
+	Value
+	Last Updated
+
+Webhook:
+	Last Triggered
+	URL
+	Last Message
+
+Trigger:
+	On:
+		DateTime
+		Sensor
+		Webhook
+	Action:
+		Script
+	Last Triggered
+	Currently Triggered
+
+Room:
+	Lights
+	State (On or Off)
+	Brightess
+	Colour
+
