@@ -5,6 +5,9 @@ using Microsoft.Extensions.Logging;
 
 namespace HomeControl.Controllers
 {
+    /// <summary>
+    /// Web interface controller
+    /// </summary>
     public class HomeController : Controller
     {
         private readonly ILogger logger;

@@ -9,11 +9,11 @@ namespace HomeControl.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    public class ApiController : Controller
+    public class Sensors : Controller
     {
         private readonly ILogger logger;
 
-        public ApiController(ILogger<ApiController> logger)
+        public Sensors(ILogger<Rooms> logger)
         {
             this.logger = logger;
         }
@@ -23,11 +23,11 @@ namespace HomeControl.Controllers
         /// </summary>
         /// <returns>An Objest</returns>
         [HttpGet()]
-        public IActionResult Index()
+        public IActionResult GetAllSensors()
         {
-            this.logger.LogInformation("Home Page Requested");
-            string json = JsonConvert.SerializeObject(new {});
-            return Content(json.ToString(), "application/json");
+            this.logger.LogInformation("Getting All Sensors");
+            string json = JsonConvert.SerializeObject(new { });
+            return this.Content(json.ToString(), "application/json");
         }
     }
 }

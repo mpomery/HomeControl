@@ -4,11 +4,52 @@
         <name>HomeControl</name>
     </assembly>
     <members>
-        <member name="M:HomeControl.Controllers.ApiController.Index">
+        <member name="M:HomeControl.Controllers.Devices.GetAllDevices">
             <summary>
             Get all the rooms, lights and switches along with their current state.
             </summary>
             <returns>An Objest</returns>
+        </member>
+        <member name="T:HomeControl.Controllers.HomeController">
+            <summary>
+            Web interface controller
+            </summary>
+        </member>
+        <member name="M:HomeControl.Controllers.Lights.GetAllDevices">
+            <summary>
+            Get all the rooms, lights and switches along with their current state.
+            </summary>
+            <returns>An Objest</returns>
+        </member>
+        <member name="M:HomeControl.Controllers.Rooms.GetAllRooms">
+            <summary>
+            Get all the rooms, lights and switches along with their current state.
+            </summary>
+            <returns>An Objest</returns>
+        </member>
+        <member name="M:HomeControl.Controllers.Sensors.GetAllSensors">
+            <summary>
+            Get all the rooms, lights and switches along with their current state.
+            </summary>
+            <returns>An Objest</returns>
+        </member>
+        <member name="M:HomeControl.Controllers.Switches.GetAllDevices">
+            <summary>
+            Get all the rooms, lights and switches along with their current state.
+            </summary>
+            <returns>An Objest</returns>
+        </member>
+        <member name="T:HomeControl.Startup">
+            <summary>
+            Application Startup Class
+            </summary>
+        </member>
+        <member name="M:HomeControl.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{HomeControl.Startup})">
+            <summary>
+            Initializes a new instance of the <see cref="T:HomeControl.Startup"/> class.
+            </summary>
+            <param name="configuration">IConfiguration Dependency Injection</param>
+            <param name="logger">ILogger Dependency Injection</param>
         </member>
     </members>
 </doc>
